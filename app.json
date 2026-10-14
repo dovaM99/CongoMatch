@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "CongoMatch",
+    "slug": "congomatch",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "congomatch",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.congomatch.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "CongoMatch a besoin de vos photos pour votre profil.",
+        "NSMicrophoneUsageDescription": "CongoMatch utilise le micro pour les notes vocales."
+      }
+    },
+    "android": {
+      "package": "com.congomatch.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0A0E",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "backgroundColor": "#0D0A0E"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0D0A0E",
+          "image": "./assets/images/logo-mark.png",
+          "imageWidth": 180
+        }
+      ],
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CongoMatch a besoin de vos photos pour votre profil."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "backgroundColor": "#0D0A0E"
+  }
+}
